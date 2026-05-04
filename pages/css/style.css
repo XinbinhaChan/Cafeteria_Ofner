@@ -72,6 +72,10 @@ nav {
   font-family: inter;
 }
 
+main {
+  margin-top: 4.9rem;
+}
+
 .apresentacao {
   display: flex;
   justify-content: center;

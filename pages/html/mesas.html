@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/mesas.css">
+    <title>Ofner</title>
 </head>
 <body>
-    <a href="./index.html">Voltar</a>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <img src="../../assets/ofner_logo.jpg" alt="" />
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li id="home"><a href="./index.html">Home</a></li>
+            <li id="mesas"><a href="./mesas.html">Mesas</a></li>
+            <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
+            <li id="sobre"><a href="./sobre.html">Sobre</a></li>
+            <li id="login"><a href="./login.html">Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <button class="nav-button">
+            <a href="#">Área do Garçom</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="mesas-logo">
+          <img src="../../assets/icons/coffee-cup.png" alt="" />
+          <p>Selecão de Mesa</p>
+        </div>
+        <div class="mesas-textos">
+          <h1 class="mesas-textos-titulo">Escolha sua mesa</h1>
+          <p class="mesas-textos-p">
+            Selecione uma mesa disponível para começar seu pedido
+          </p>
+        </div>
+        <div class="mesas-cores">
+            <div class="mesas-cores-disponivel">
+                <p class="mesas-cores-disponivel-bolinha"></p>
+                <p class="mesas-cores-disponivel-texto">Disponivel</p>
+            </div>
+            <div class="mesas-cores-ocupada">
+                <p class="mesas-cores-ocupada-bolinha"></p>
+                <p class="mesas-cores-ocupada-texto">Ocupada</p>
+            </div>
+        </div>
+        <div class="mesas-mesas">
+            <div>
+                <p class="mesas-mesas-numero">1</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">2</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">3</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">4</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">5</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">6</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">7</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">8</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">9</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">10</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">11</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+            <div>
+                <p class="mesas-mesas-numero">12</p>
+                <p class="mesas-mesas-estado"> Livre</p>
+            </div>
+        </div>
+        <div class="mesas-infocard">
+            <div class="mesas-infocard-logo">
+                <img src="../../assets/icons/coffee-cup.png" alt="">
+            </div>
+            <div class="mesas-infocard-texto">
+                <h3 class="mesas-infocard-texto-titulo">Como funciona?</h3>
+                <ul class="mesas-infocard-texto-lista">
+                    <li><img src="../../assets/icons/check.png" alt=""> Escolha uma mesa disponível (verde)</li>
+                    <li><img src="../../assets/icons/check.png" alt=""> Monte seu pedido no cardápio</li>
+                    <li><img src="../../assets/icons/check.png" alt=""> Finalize o pagamento e aproveite!</li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
