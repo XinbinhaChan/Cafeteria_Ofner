@@ -1,46 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-Br">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/login.css">
-    <title>Ofner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <title>Ofner</title>
 </head>
+
 <body>
-    <header>
-      <nav>
-        <div class="nav-logo">
-          <img src="../../assets/ofner_logo.jpg" alt="" />
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <img src="../../assets/ofner_logo.jpg" alt="" />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li id="home"><a href="./index.html">Home</a></li>
+          <li id="mesas"><a href="./mesas.html">Mesas</a></li>
+          <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
+          <li id="sobre"><a href="./sobre.html">Sobre</a></li>
+          <li id="login"><a href="./login.html">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="nav-button">
+          <a href="#">Área do Garçom</a>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a class="voltar" href="./index.html"> &lt; Voltar para home</a>
+    <div class="container-login">
+
+      <div action="" class="form-login">
+        <img src="../../assets/ofner_logo.jpg" class="logo" alt="logo da ofner">
+
+        <h1>Área do Garçom</h1>
+        <p>Acesso restrito para equipe autorizada</p>
+
+        <div class="aviso">
+          <img src="../../assets/icons/more-information.png" alt="Aviso">
+          <p>Esta área é exclusiva para membros da equipe. Use suas credenciais de acesso.</p>
         </div>
+
+        <form action="">
+          <div>
+            <label for="">Email</label>
+            <input type="email" class="iconeEmail" name="#" id="#" placeholder="seu@email.com">
+          </div>
+
+          <div>
+            <label for="">Senha</label>
+            <input type="password" class="iconeSenha" name="#" id="#" placeholder="°°°°°°°°°">
+          </div>
+
+
+          <button class="submit">Entrar no sistema</button>
+          <a href="#">Entrar no sistema</a>
+
+          <!-- <img src="../../assets/icons/login.png" alt="icone" class="iconeEntrar" -->
+
+
+          <a href="#" class="forget">Esqueci a Senha</a>
+        </form>
+
+        <p>ou
+          <hr>
+        </p>
+
+        <p>Está procurando o cardápio?</p>
+
+        <a href="">Ver Cardápio como Cliente</a>
+
+
         <div>
-          <ul class="nav-links">
-            <li id="home"><a href="./index.html">Home</a></li>
-            <li id="mesas"><a href="./mesas.html">Mesas</a></li>
-            <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
-            <li id="sobre"><a href="./sobre.html">Sobre</a></li>
-            <li id="login"><a href="./login.html">Login</a></li>
-          </ul>
+          <p>📋 Credenciais de Demonstração:</p>
+
+          <div>
+
+            <p>Garçom:</p>
+            <p>admin@ofner.com / admin123</p>
+
+          </div>
+
+          <div>
+
+            <p>Cliente:</p>
+            <p>qualquer email/senha</p>
+          </div>
         </div>
-        <div>
-          <button class="nav-button">
-            <a href="#">Área do Garçom</a>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <a href="./index.html">Voltar</a>
+
+
+      </div>
+
+
+    </div>
+    <p>Sistema seguro e protegido © 2026 Ofner</p>
+  </main>
+
+
 </body>
+
 </html>

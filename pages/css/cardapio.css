@@ -33,7 +33,7 @@ nav {
   text-decoration: none;
 }
 
-.nav-links > li:hover {
+.nav-links > li :hover {
   color: #c75a1b;
 }
 
@@ -70,4 +70,5 @@ nav {
   color: white;
   font-weight: 700;
   font-family: inter;
+  
 }

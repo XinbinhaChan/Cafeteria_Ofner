@@ -33,7 +33,11 @@ nav {
   text-decoration: none;
 }
 
-.nav-links > li:hover {
+.nav-links:hover {
+  color: #c75a1b;
+}
+
+.nav-links > li :hover {
   color: #c75a1b;
 }
 
@@ -205,6 +209,8 @@ main {
 .destaques {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .destaques-logo {
@@ -264,20 +270,68 @@ main {
 }
 
 .destaques-produtos {
-  border: 1px solid red;
-  padding: 10rem;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.destaques-produtos button {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background: #c75a1b;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.destaques-produtos .btn-prev { 
+  left: 250px;
+}
+.destaques-produtos .btn-next { 
+  right: 250px;
+}
+
+.destaques-produtos button:hover {
+    background: #c75a1b;
+}
+
+.slides {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .destaques-cardapio{
-  border: 1px orange solid;
+  border: 1px #c75a1b;
   width: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+  background-color: #c75a1b;
+  padding: .625rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+ 
 }
 .destaques-cardapio>a{
-  color: #c75a1b;
-
+  color: #fdfdfd;
+  font-size: 1rem;
+  text-align: center;
+  font-family: inter;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
@@ -699,4 +753,8 @@ main {
   font-family: inter;
   text-align: center;
   color: rgb(155, 155, 155);
+}
+
+.submit {
+  
 }
