@@ -48,6 +48,14 @@ nav {
   text-underline-offset: 8px; 
 }
 
+#login > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
 .nav-logo > img {
   width: 2.5rem;
 }
@@ -232,9 +240,10 @@ main {
   background-color: #f3ede6;
 }
 
-.destaques-logo > img {
-  width: 1rem;
-  height: 1rem;
+.destaques-logo > span {
+  color: #c75a1b;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .destaques-logo > p {
@@ -421,9 +430,9 @@ main {
   background-color: #f3ede6;
 }
 
-.localizacao-logo > img {
-  width: 1rem;
-  height: 1rem;
+.localizacao-logo > span {
+  font-size: 1rem;
+  color: #c75a1b;
 }
 
 .localizacao-logo > p {
@@ -506,6 +515,8 @@ main {
 .localizacao-informacoes-endereco-icon {
   
   background-color: #c75a1b;
+  color: white;
+  font-size: 1rem;
   padding: 1rem;
   border-radius: 1rem;
   display: flex;
@@ -513,12 +524,6 @@ main {
   align-items: center;
   position: initial;
   margin-bottom: 3rem;
-}
-
-.localizacao-informacoes-endereco-icon > img {
-  
-  width: 1rem;
-  height: 1rem;
 }
 
 .localizacao-informacoes-endereco-texto {
@@ -561,18 +566,14 @@ main {
   
   background-color: #c75a1b;
   padding: 1rem;
+  color: white;
+  font-size: 1rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: initial;
   margin-bottom: 3rem;
-}
-
-.localizacao-informacoes-horario-icon > img {
-  
-  width: 1rem;
-  height: 1rem;
 }
 
 .localizacao-informacoes-horario-texto {
@@ -615,18 +616,14 @@ main {
   
   background-color: #c75a1b;
   padding: 1rem;
+  color: white;
+  font-size: 1rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: initial;
   margin-bottom: 3rem;
-}
-
-.localizacao-informacoes-telefone-icon > img {
-  
-  width: 1rem;
-  height: 1rem;
 }
 
 .localizacao-informacoes-telefone-texto {
@@ -669,18 +666,14 @@ main {
   
   background-color: #c75a1b;
   padding: 1rem;
+  color: white;
+  font-size: 1rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: initial;
   margin-bottom: 3rem;
-}
-
-.localizacao-informacoes-email-icon > img {
-  
-  width: 1rem;
-  height: 1rem;
 }
 
 .localizacao-informacoes-email-texto {

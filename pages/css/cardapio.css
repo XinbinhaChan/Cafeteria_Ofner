@@ -44,6 +44,12 @@ nav {
   text-underline-offset: 8px; 
 }
 
+#login > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 .nav-logo > img {
   width: 2.5rem;
 }
