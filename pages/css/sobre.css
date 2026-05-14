@@ -245,6 +245,10 @@ main {
 
 
 
+.jornada{
+  padding-bottom: 5rem;
+  
+}
 .jornada-text{
   display: flex;
   justify-content: center;
@@ -271,8 +275,7 @@ main {
 
 .jornada-linha{
   width: 100%;
-  height: 50rem;
-  border: #000 1px solid; 
+  height: fit-content;
   position: relative;
   display: flex;
   justify-content: center;
@@ -294,7 +297,6 @@ main {
   width: 100%;
   margin: 0 auto;
   z-index: 2;
-  border: 1px solid red;
 }
 
 .jornada-linha-item-esquerda{
@@ -303,7 +305,73 @@ main {
   margin-bottom: 40px;
   position: relative;
   justify-content: flex-start;
-  border: 1px solid blue;
+
+}
+
+.jornada-linha-item-esquerda-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+  gap: 5rem;
+}
+
+.jornada-linha-item-esquerda-card1-info{
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  flex-direction: column;
+  width: 30rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.jornada-linha-item-esquerda-card1-info-titulo{
+  font-size: 2rem;
+  font-family: inter;
+  color: #c75a1b;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.jornada-linha-item-esquerda-card1-info-texto-h3{
+  font-size: 1.5rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: right;
+  font-weight: bold;
+}
+
+.jornada-linha-item-esquerda-card1-info-texto-p{
+  font-size: 1rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: right;
+  font-weight: 400;
+}
+
+.jornada-linha-item-esquerda-card1-icon{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c75a1b;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.jornada-linha-item-esquerda-card1:hover>.jornada-linha-item-esquerda-card1-icon, 
+.jornada-linha-item-esquerda-card1:hover>.jornada-linha-item-esquerda-card1-info{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .jornada-linha-item-direita{
@@ -312,7 +380,70 @@ main {
   margin-bottom: 40px;
   position: relative;
   justify-content: flex-end;
-  border: 1px solid green;
 }
 
+.jornada-linha-item-direita-card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+  gap: 5rem;
+}
 
+.jornada-linha-item-direita-card1-icon{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c75a1b;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.jornada-linha-item-direita-card1-info{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  width: 30rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.jornada-linha-item-direita-card1-info-titulo{
+  font-size: 2rem;
+  font-family: inter;
+  color: #c75a1b;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.jornada-linha-item-direita-card1-info-texto-h3{
+  font-size: 1.5rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: left;
+  font-weight: bold;
+}
+
+.jornada-linha-item-direita-card1-info-texto-p{
+  font-size: 1rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: left;
+  font-weight: 400;
+}
+
+.jornada-linha-item-direita-card1:hover>.jornada-linha-item-direita-card1-icon, 
+.jornada-linha-item-direita-card1:hover>.jornada-linha-item-direita-card1-info{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
