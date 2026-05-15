@@ -15,6 +15,7 @@ nav {
   top: 0;                
   z-index: 1000; 
   width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -800,4 +801,157 @@ main {
   color: #f5f0ea;
   text-align: center;
   width: 10rem;
+}
+
+
+
+.produtos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.produtos-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produtos-text-titulo{
+  font-size: 3rem;
+  font-family: playfair;
+  color: #4a2e2a;
+  text-align: center;
+}
+
+.produtos-text-p{
+  font-size: 1rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: center;
+}
+
+.produtos-cards{
+  width: 70rem;
+  height: 30rem;
+  border-radius: 1rem;
+  border: #c75a1b 1px solid;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.convite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #c75a1b;
+}
+
+.convite-icon{
+  background-color: #c98357;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.convite-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.convite-text-titulo{
+  font-size: 3rem;
+  font-family: playfair;
+  color: white;
+  text-align: center;
+}
+
+.convite-text-p{
+  font-size: 1rem;
+  font-family: inter;
+  color: white;
+  text-align: center;
+}
+
+.convite-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.convite-buttons-pedido{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.convite-buttons-pedido > a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: center;
+  font-weight: bold;
+}
+
+.convite-buttons-pedido:hover{
+  background-color:#f5f0ea;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.convite-buttons-voltar{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 1rem;
+  background-color: #c75a1b;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.convite-buttons-voltar > a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: inter;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.convite-buttons-voltar:hover{
+  background-color: #c2774c;
+  transition: 0.2s;
 }

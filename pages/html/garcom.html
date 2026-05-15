@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../assets/ofner_logo.jpg"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/cardapio.css" />
-    <script src="https://kit.fontawesome.com/7dc64e4614.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/garcom.css" />
+    <script
+      src="https://kit.fontawesome.com/7dc64e4614.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Ofner</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <nav>
         <div class="nav-logo">
@@ -32,7 +39,11 @@
             <li id="mesas"><a href="./mesas.html">Mesas</a></li>
             <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
             <li id="sobre"><a href="./sobre.html">Sobre</a></li>
-            <li id="login"> <a href="./login.html"> <i class="fa-regular fa-user"></i> Login</a></li>
+            <li id="login">
+              <a href="./login.html">
+                <i class="fa-regular fa-user"></i> Login</a
+              >
+            </li>
           </ul>
         </div>
         <div>
@@ -42,6 +53,22 @@
         </div>
       </nav>
     </header>
-    <a href="./index.html">Voltar</a>
-</body>
+
+    <main>
+      <section class="title">
+        <div class="title-text">
+          <h1 class="title-text-title">Painel do Garçom</h1>
+          <p class="title-text-p">Acompanhe e gerencie todas as mesas em tempo real</p>
+        </div>
+        <div class="title-status">
+          <button class="title-status-button" onclick="window.location.reload()">
+            <span><i class="fa-solid fa-arrows-rotate"></i></span> Atualizar
+          </button>
+          <span class="title-status-span"><i class="fa-solid fa-circle"></i> Sistema Online</span>
+        </div>
+      </section>
+      <section class="dados">
+      </section>
+    </main>
+  </body>
 </html>
