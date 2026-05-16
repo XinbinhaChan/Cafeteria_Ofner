@@ -79,3 +79,301 @@ nav {
   font-family: inter;
   
 }
+
+
+
+main {
+  margin-top: 5.5rem;
+  background-color: #faf7f2;
+  padding-bottom: 2rem;
+}
+
+
+
+.title-text {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.title-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.5rem;
+}
+
+.title-text-container-title {
+  font-size: 3rem;
+  font-family: playfair;
+  color: #4a2e2a;
+  text-align: left;
+  font-weight: 500;
+}
+
+.title-text-container-icon {
+  width: 5rem;
+  height: 2rem;
+  background-color: #c75a1b;
+  border-radius: 1rem;
+}
+
+.title-text-p {
+  font-size: 1rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: left;
+  font-weight: 400;
+}
+
+
+
+.filter{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.filter-icon{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #4a2e2a;
+}
+
+.filter-option{
+  background-color: white;
+  border-radius: 10rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  color:#4a2e2a;
+  font-size: 0.9rem;
+  font-family: inter;
+  font-weight: 600;
+  border:rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+#todos{
+  background-color: #c75a1b;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
+
+.cardapio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+
+.cardapio-produtos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 67.5%;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.cardapio-produtos-card{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  width: 17.5rem;
+  height: 25rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardapio-produtos-card-img{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.cardapio-produtos-card-img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #c75a1b;
+}
+
+.cardapio-produtos-card-img > p{
+  position: baseline;
+  align-self: flex-start;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: white;
+  font-family: inter;
+  font-weight: 600;
+  font-size: 0.75rem;
+  background-color:#c75a1b;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 10rem;
+}
+
+.cardapio-produtos-card-produto{
+  font-family: playfair;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #4a2e2a;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 85%;
+}
+
+.cardapio-produtos-card-preco{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardapio-produtos-card-preco > p{
+  font-family: inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color:#c75a1b;
+  text-align: left;
+}
+
+.cardapio-produtos-card-preco > button{
+  background-image: linear-gradient(105deg,rgb(199, 90, 27) 0%, rgb(169,113,66) 100%);
+  border-radius: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  color:white;
+  font-size: 0.9rem;
+  font-family: inter;
+  font-weight: 600;
+  border: none;
+}
+
+.cardapio-pedido {
+  margin-right: 0.75rem;
+  width: 40%;
+  height: 237rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.cardapio-pedido-card{
+  width: 85%;
+  height: 25rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 10rem;
+}
+
+.cardapio-pedido-card-title{  
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  width: 90%;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(74, 46, 42, 0.2);
+}
+
+.cardapio-pedido-card-title-icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #c75a1b;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.cardapio-pedido-card-title-titulo{
+  font-size: 1.5rem;
+  font-family: playfair;
+  color: #4a2e2a;
+  text-align: left;
+  font-weight: 525;
+}
+
+.cardapio-pedido-card-info{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardapio-pedido-card-info-icon{
+  background-color:#f3ede6;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #c6a75e;
+  margin-bottom: 0.5rem;
+}
+
+.cardapio-pedido-card-info-titulo{
+  font-size: 1rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cardapio-pedido-card-info-p{
+  font-size: 0.75rem;
+  font-family: inter;
+  color: #4a2e2a;
+  text-align: center;
+  font-weight: 300;
+}
