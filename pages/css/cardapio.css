@@ -215,6 +215,7 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 1rem 1rem 0 0;
+  position: relative;
 }
 
 .cardapio-produtos-card-img > img{
@@ -222,19 +223,18 @@ main {
   height: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
-  background-color: #c75a1b;
 }
 
 .cardapio-produtos-card-img > p{
-  position: baseline;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   align-self: flex-start;
-  margin-top: 1rem;
-  margin-right: 1rem;
   color: white;
   font-family: inter;
   font-weight: 600;
   font-size: 0.75rem;
-  background-color:#c75a1b;
+  background-color: #c75a1b;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 1rem;
@@ -245,7 +245,7 @@ main {
 .cardapio-produtos-card-produto{
   font-family: playfair;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #4a2e2a;
   text-align: left;
   margin-top: 1rem;
