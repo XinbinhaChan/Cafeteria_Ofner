@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../assets/ofner_logo.jpg"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +21,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://kit.fontawesome.com/7dc64e4614.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7dc64e4614.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js" defer></script>
     <title>Ofner</title>
   </head>
   <body>
-    
     <header>
-      <nav>
+      <nav class="nav-pc">
         <div class="nav-logo">
           <img src="../../assets/ofner_logo.jpg" alt="" />
         </div>
@@ -33,7 +40,11 @@
             <li id="mesas"><a href="./mesas.html">Mesas</a></li>
             <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
             <li id="sobre"><a href="./sobre.html">Sobre</a></li>
-            <li id="login"><a href="./login.html"> <i class="fa-regular fa-user"></i> Login</a></li>
+            <li id="login">
+              <a href="./login.html">
+                <i class="fa-regular fa-user"></i> Login</a
+              >
+            </li>
           </ul>
         </div>
         <div>
@@ -43,7 +54,33 @@
         </div>
       </nav>
 
-      
+      <nav class="nav-mobile">
+        <div class="nav-logo">
+          <img src="../../assets/ofner_logo.jpg" alt="" />
+        </div>
+
+        <div class="nav-mobile-links">
+          <div>
+            <ul class="nav-links">
+              <li id="home"><a href="./index.html">Home</a></li>
+              <li id="mesas"><a href="./mesas.html">Mesas</a></li>
+              <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
+              <li id="sobre"><a href="./sobre.html">Sobre</a></li>
+              <li id="login">
+                <a href="./login.html">
+                  <i class="fa-regular fa-user"></i> Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button class="nav-button">
+              <a href="../html/garcom.html">Área do Garçom</a>
+            </button>
+          </div>
+        </div>
+
+      </nav>
     </header>
 
     <main>
@@ -88,9 +125,15 @@
 
         <div class="destaques-produtos">
           <div class="slides">
-            <img src="../../assets/imgs/cafe.jpg" alt="Carrossel HTML CSS Imagem 1">
-            <img src="../../assets/imgs/croissant.jpg" alt="Carrossel HTML CSS Imagem 2">
-            <img src="assets/imgs/" alt="Carrossel HTML CSS Imagem 3">
+            <img
+              src="../../assets/imgs/cafe.jpg"
+              alt="Carrossel HTML CSS Imagem 1"
+            />
+            <img
+              src="../../assets/imgs/croissant.jpg"
+              alt="Carrossel HTML CSS Imagem 2"
+            />
+            <img src="assets/imgs/" alt="Carrossel HTML CSS Imagem 3" />
           </div>
           <button class="btn-prev">&#10094;</button>
           <button class="btn-next">&#10095;</button>
@@ -101,78 +144,148 @@
       </section>
       <section class="espaco">
         <div class="espaco-textos">
-            <h2 class="espaco-textos-titulo">Conheça nosso espaço</h2>
-            <p class="espaco-textos-p">Um ambiente acolhedor criado especialmente para você</p>
+          <h2 class="espaco-textos-titulo">Conheça nosso espaço</h2>
+          <p class="espaco-textos-p">
+            Um ambiente acolhedor criado especialmente para você
+          </p>
         </div>
         <div class="espaco-imagens">
-            <img src="" alt="Finja que tem uma imagem aqui">
+          <div class="espaco-imagens-slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="espaco-imagens-fotos" id="first">
+              <img src="../../assets/imgs/cafeteria_img1.jpg" alt="">
+            </div>
+            <div class="espaco-imagens-fotos">
+              <img src="../../assets/imgs/cafeteria_img2.jpg" alt="">
+            </div>
+            <div class="espaco-imagens-fotos">
+              <img src="../../assets/imgs/cafeteria_img3.jpg" alt="">
+            </div>
+            <div class="espaco-imagens-fotos">
+              <img src="../../assets/imgs/cafeteria_img4.jpg" alt="">
+            </div>
+
+
+            <div class="espaco-imagens-navegacao-auto">
+              <div class="espaco-imagens-navegacao-auto-btn1"></div>
+              <div class="espaco-imagens-navegacao-auto-btn2"></div>
+              <div class="espaco-imagens-navegacao-auto-btn3"></div>
+              <div class="espaco-imagens-navegacao-auto-btn4"></div>
+            </div>
+          </div>
+
+          <div class="espaco-imagens-navegacao-manual">
+            <label for="radio1" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label for="radio2" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label for="radio3" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label for="radio4" class="espaco-imagens-navegacao-manual-btn"></label>
+          </div>
         </div>
       </section>
       <section class="localizacao">
         <div class="localizacao-logo">
-        <span><i class="fa-solid fa-location-dot"></i></span>
+          <span><i class="fa-solid fa-location-dot"></i></span>
           <p>Localização</p>
         </div>
         <div class="localizacao-textos">
-            <h1 class="localizacao-textos-titulo">Venha nos visitar</h1>
-            <p class="localizacao-textos-p">Estamos localizados no coração da cidade</p>
+          <h1 class="localizacao-textos-titulo">Venha nos visitar</h1>
+          <p class="localizacao-textos-p">
+            Estamos localizados no coração da cidade
+          </p>
         </div>
         <div class="localizacao-mapa">
-            <div class="localizacao-gps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0475045077424!2d-46.6606654!3d-23.6026292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a1b2d0c4cb1%3A0xdc3d9c0f58ec8a2a!2sOfner%20-%20Moema!5e0!3m2!1spt-BR!2sbr!4v1777768872224!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="localizacao-gps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0475045077424!2d-46.6606654!3d-23.6026292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a1b2d0c4cb1%3A0xdc3d9c0f58ec8a2a!2sOfner%20-%20Moema!5e0!3m2!1spt-BR!2sbr!4v1777768872224!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="localizacao-informacoes">
+            
+            <div class="localizacao-informacoes-endereco">
+              <div class="localizacao-informacoes-endereco-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="localizacao-informacoes-endereco-texto">
+                <h3 class="localizacao-informacoes-endereco-texto-titulo">
+                  Endereço
+                </h3>
+                <p class="localizacao-informacoes-endereco-texto-p">
+                  Av. Ibirapuera, 2033
+                </p>
+                <p class="localizacao-informacoes-endereco-texto-p">
+                  Indianópolis, São Paulo - SP, 04028-000
+                </p>
+              </div>
             </div>
-            <div class="localizacao-informacoes">
-                <div class="localizacao-informacoes-endereco">
-                    <div class="localizacao-informacoes-endereco-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="localizacao-informacoes-endereco-texto">
-                        <h3 class="localizacao-informacoes-endereco-texto-titulo">Endereço</h3>
-                        <p class="localizacao-informacoes-endereco-texto-p">Av. Ibirapuera, 2033</p>
-                        <p class="localizacao-informacoes-endereco-texto-p">Indianópolis, São Paulo - SP, 04028-000</p>
-                    </div>
-                </div>
 
-                <div class="localizacao-informacoes-horario">
-                    <div class="localizacao-informacoes-horario-icon">
-                        <i class="fa-regular fa-clock"></i>
-                    </div>
-                    <div class="localizacao-informacoes-horario-texto">
-                        <h3 class="localizacao-informacoes-horario-texto-titulo">Horários</h3>
-                        <p class="localizacao-informacoes-horario-texto-p">Domigo á Quinta: 07:00 - 23:00</p>
-                        <p class="localizacao-informacoes-horario-texto-p">Sexta e Sábado: 07:00 - 02:00</p>
-                    </div>
-                </div>
-                <div class="localizacao-informacoes-telefone">
-                    <div class="localizacao-informacoes-telefone-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="localizacao-informacoes-telefone-texto">
-                        <h3 class="localizacao-informacoes-telefone-texto-titulo">Telefone</h3>
-                        <p class="localizacao-informacoes-telefone-texto-p">(11) 5693-8620</p>
-                    </div>
-                </div>
-                <div class="localizacao-informacoes-email">
-                    <div class="localizacao-informacoes-email-icon">
-                      <i class="fa-regular fa-envelope"></i>
-                    </div>
-                  
-                    <div class="localizacao-informacoes-email-texto">
-                        <h3 class="localizacao-informacoes-email-texto-titulo">E-mail</h3>
-                        <p class="localizacao-informacoes-email-texto-p">ecommerce@ofner.com.br</p>
-                    </div>
-                </div>
+            <div class="localizacao-informacoes-horario">
+              <div class="localizacao-informacoes-horario-icon">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="localizacao-informacoes-horario-texto">
+                <h3 class="localizacao-informacoes-horario-texto-titulo">
+                  Horários
+                </h3>
+                <p class="localizacao-informacoes-horario-texto-p">
+                  Domigo á Quinta: 07:00 - 23:00
+                </p>
+                <p class="localizacao-informacoes-horario-texto-p">
+                  Sexta e Sábado: 07:00 - 02:00
+                </p>
+              </div>
             </div>
+            <div class="localizacao-informacoes-telefone">
+              <div class="localizacao-informacoes-telefone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="localizacao-informacoes-telefone-texto">
+                <h3 class="localizacao-informacoes-telefone-texto-titulo">
+                  Telefone
+                </h3>
+                <p class="localizacao-informacoes-telefone-texto-p">
+                  (11) 5693-8620
+                </p>
+              </div>
+            </div>
+            <div class="localizacao-informacoes-email">
+              <div class="localizacao-informacoes-email-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+
+              <div class="localizacao-informacoes-email-texto">
+                <h3 class="localizacao-informacoes-email-texto-titulo">
+                  E-mail
+                </h3>
+                <p class="localizacao-informacoes-email-texto-p">
+                  ecommerce@ofner.com.br
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <footer class="rodape">
         <div class="rodape-logo">
-            <img src="../../assets/ofner_logo.jpg" alt="">
+          <img src="../../assets/ofner_logo.jpg" alt="" />
         </div>
         <div class="rodape-texto">
-            <p class="rodape-texto-p">Cafeteria Ofner - Tradição e qualidade desde 1952</p>
+          <p class="rodape-texto-p">
+            Cafeteria Ofner - Tradição e qualidade desde 1952
+          </p>
 
-            <p class="rodape-texto-copyright">© 2026 Ofner - Todos os direitos reservados</p>
+          <p class="rodape-texto-copyright">
+            © 2026 Ofner - Todos os direitos reservados
+          </p>
         </div>
       </footer>
     </main>

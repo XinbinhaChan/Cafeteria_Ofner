@@ -429,18 +429,18 @@ main {
   color: #99a1af;
 }
 
-.mesas-status-guard{
+.mesas-status-guard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   gap: 1rem;
 }
 
-.mesas-status-mesas{
+.mesas-status-mesas {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #e6fdee;
-  border: 2px solid rgb(5,223,114);
+  border: 2px solid rgb(5, 223, 114);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -448,13 +448,13 @@ main {
   flex-direction: column;
 }
 
-.mesas-status-mesas:active{
+.mesas-status-mesas:active {
   border: 5px solid #c75a1b;
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }
 
-.mesas-status-mesas-icon{
+.mesas-status-mesas-icon {
   background-color: #f3fdf7;
   border-radius: 50%;
   width: 3rem;
@@ -463,28 +463,26 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color:#008247;
+  color: #008247;
   margin-bottom: 1rem;
 }
 
-.mesas-status-mesas-num{
+.mesas-status-mesas-num {
   font-size: 1.25rem;
   font-family: inter;
-  color:#008247;
+  color: #008247;
   text-align: center;
   font-weight: 600;
 }
 
-.mesas-status-mesas-estado{
+.mesas-status-mesas-estado {
   font-size: 0.75rem;
   font-family: inter;
-  color:#008247;
+  color: #008247;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
 }
-
-
 
 .mesas-select {
   margin-right: 1rem;
@@ -495,7 +493,7 @@ main {
   align-items: baseline;
 }
 
-.mesas-select-card{
+.mesas-select-card {
   width: 85%;
   height: 60%;
   display: flex;
@@ -510,8 +508,8 @@ main {
   top: 10rem;
 }
 
-.mesas-select-card-icon{
-  background-color:#f3ede6;
+.mesas-select-card-icon {
+  background-color: #f3ede6;
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
@@ -523,7 +521,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.mesas-select-card-titulo{
+.mesas-select-card-titulo {
   font-size: 1rem;
   font-family: inter;
   color: #4a2e2a;
@@ -531,10 +529,71 @@ main {
   font-weight: 500;
 }
 
-.mesas-select-card-p{
+.mesas-select-card-p {
   font-size: 0.75rem;
   font-family: inter;
   color: #4a2e2a;
   text-align: center;
   font-weight: 400;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 430px) {
+  /* barra de navegacao e parte principal */
+
+  * {
+    overflow-x: hidden;
+  }
+
+  .nav-pc {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-mobile .nav-mobile-links {
+    display: none;
+  }
+
+  /* .title-status .title-status-span{
+   padding-right: 1rem;
+  } */
+
+  .dados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mesas {
+    display: grid;
+    margin-left: 2rem;
+  }
+
+  .mesas .mesas-status .mesas-status-text{
+    width: 100%;
+  }
+
+  .mesas .mesas-status .mesas-status-guard{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mesas-status-mesas{
+    padding: 1rem 3rem;
+  }
+
+  .mesas-select{
+    width: 100%;
+    margin-left: -2rem;
+  }
+
+
+
 }

@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/cardapio.css" />
-    <script src="https://kit.fontawesome.com/7dc64e4614.js" crossorigin="anonymous"></script>
-    <title>Ofner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../../assets/ofner_logo.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/cardapio.css" />
+  <script src="https://kit.fontawesome.com/7dc64e4614.js" crossorigin="anonymous"></script>
+  <title>Ofner</title>
 </head>
+
 <body>
-    <header>
-      <nav>
-        <div class="nav-logo">
-          <img src="../../assets/ofner_logo.jpg" alt="" />
-        </div>
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <img src="../../assets/ofner_logo.jpg" alt="" />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li id="home"><a href="./index.html">Home</a></li>
+          <li id="mesas"><a href="./mesas.html">Mesas</a></li>
+          <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
+          <li id="sobre"><a href="./sobre.html">Sobre</a></li>
+          <li id="login"> <a href="./login.html"> <i class="fa-regular fa-user"></i> Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="nav-button">
+          <a href="../html/garcom.html">Área do Garçom</a>
+        </button>
+      </div>
+    </nav>
+    <nav class="nav-mobile">
+      <div class="nav-logo">
+        <img src="../../assets/ofner_logo.jpg" alt="" />
+      </div>
+
+      <div class="nav-mobile-links">
         <div>
           <ul class="nav-links">
             <li id="home"><a href="./index.html">Home</a></li>
             <li id="mesas"><a href="./mesas.html">Mesas</a></li>
             <li id="cardapio"><a href="./cardapio.html">Cardápio</a></li>
             <li id="sobre"><a href="./sobre.html">Sobre</a></li>
-            <li id="login"> <a href="./login.html"> <i class="fa-regular fa-user"></i> Login</a></li>
+            <li id="login">
+              <a href="./login.html">
+                <i class="fa-regular fa-user"></i> Login</a>
+            </li>
           </ul>
         </div>
         <div>
@@ -40,331 +64,334 @@
             <a href="../html/garcom.html">Área do Garçom</a>
           </button>
         </div>
-      </nav>
-    </header>
-    <main>
-        <section class="title">
-        <div class="title-text">
-          <div class="title-text-container">
-            <h1 class="title-text-container-title">Cardápio Completo</h1>
-            <span class="title-text-container-icon"></span>
-          </div>
-          <p class="title-text-p">Explore nossos produtos premium e crie seu café personalizado</p>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <section class="title">
+      <div class="title-text">
+        <div class="title-text-container">
+          <h1 class="title-text-container-title">Cardápio Completo</h1>
+          <span class="title-text-container-icon"></span>
         </div>
-      </section>
-      <section class="filter">
-        <span class="filter-icon"><i class="fa-solid fa-filter"></i></span>
-        <div class="filter-option" id="todos"> Todos</div>
-        <div class="filter-option" id="cafes"> Cafés</div>
-        <div class="filter-option" id="doces"> Doces</div>
-        <div class="filter-option" id="salgados"> Salgados</div>
-        <div class="filter-option" id="bebidas"> Bebidas especiais</div>
-        <div class="filter-option " id="personalizados"> <i class="fa-solid fa-star"></i> Personalizados</div>
-      </section>
-      <section class="cardapio">
-        <div class="cardapio-produtos">
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/expresso.jpg" alt=""/>
-              <p>Cafés</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Espresso Premium</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 8.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
+        <p class="title-text-p">Explore nossos produtos premium e crie seu café personalizado</p>
+      </div>
+    </section>
+    <section class="filter">
+      <span class="filter-icon"><i class="fa-solid fa-filter"></i></span>
+      <div class="filter-option" id="todos"> Todos</div>
+      <div class="filter-option" id="cafes"> Cafés</div>
+      <div class="filter-option" id="doces"> Doces</div>
+      <div class="filter-option" id="salgados"> Salgados</div>
+      <div class="filter-option" id="bebidas"> Bebidas especiais</div>
+      <div class="filter-option " id="personalizados"> <i class="fa-solid fa-star"></i> Personalizados</div>
+    </section>
+    <section class="cardapio">
+      <div class="cardapio-produtos">
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/expresso.jpg" alt="" />
+            <p>Cafés</p>
           </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/cappucino.jpg" alt=""/>
-              <p>Cafés</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Cappuccino Clássico</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 12.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
+          <p class="cardapio-produtos-card-produto">Espresso Premium</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 8.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
           </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/cafe_americano.jpg" alt=""/>
-              <p>Cafés</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Café Americano</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 9.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/latte_machiato.jpg" alt=""/>
-              <p>Cafés</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Latte Macchiato</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 13.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/cafe_gelado.jpg" alt=""/>
-              <p>Cafés</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Café Gelado</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 11.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/mocha.png" alt=""/>
-              <p>Cafés</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Mocha</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 14.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/croissant_artesanal.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Croissant Artesanal</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 9.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/bolo_belga.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Bolo de Chocolate Belga</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 15.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/cheesecake.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Cheesecake Especial</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 16.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/macaron.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Macaron Francês</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 12.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/tiramisu.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Tiramisu Tradicional</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 18.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/brownie_de_chocolate.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Brownie de Chocolate</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 13.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/torta_de_limao.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Torta de Limão</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 14.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/pavlova.jpg" alt=""/>
-              <p>Doces</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Pavlova</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 17.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/sanduiche.jpg" alt=""/>
-              <p>Salgados</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Sanduíche Premium</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 18.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/empada_frango.jpg" alt=""/>
-              <p>Salgaddos</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Empada de Frango</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 11.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/quiche_lorraine.jpg" alt=""/>
-              <p>Salgados</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Quiche Lorraine</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 16.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/panini.jpg" alt=""/>
-              <p>Salgados</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Panini Italiano</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 19.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/croissant_queijo.jpg" alt=""/>
-              <p>Salgados</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Croissant de Queijo e Presunto</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 10.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/wrap_vegetariano.jpg" alt=""/>
-              <p>Salgados</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Wrap Vegetariano</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 15.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/mocha_chocolate.jpg" alt=""/>
-              <p>Bebidas Especiais</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Mocha Chocolate</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 14.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/smoothie.jpg" alt=""/>
-              <p>Bebidas Especiais</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Smoothie de Frutas</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 15.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/chocolate_quente.jpg" alt=""/>
-              <p>Bebidas Especiais</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Chocolate Quente Premium</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 13.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/cha.jpg" alt=""/>
-              <p>Bebidas Especiais</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Chá Especial</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 10.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/frappe.jpg" alt=""/>
-              <p>Bebidas Especiais</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Frappé de Caramelo</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 16.00</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-          <div class="cardapio-produtos-card">
-            <div class="cardapio-produtos-card-img">
-              <img src="../../assets/imgs/cardapio/milkshake.jpg" alt=""/>
-              <p>Bebidas Especiais</p>
-            </div>
-            <p class="cardapio-produtos-card-produto">Milkshake Especial</p>
-            <div class="cardapio-produtos-card-preco">
-              <p>R$ 17.50</p>
-              <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
-            </div>
-          </div>
-         </div>
         </div>
-        <div class="cardapio-pedido">
-          <div class="cardapio-pedido-card">
-            <div class="cardapio-pedido-card-title">
-              <span class="cardapio-pedido-card-title-icon"><i class="fa-solid fa-cart-shopping"></i></span>
-              <h3 class="cardapio-pedido-card-title-titulo">Seu Pedido</h3>
-            </div>
-             <div class="cardapio-pedido-card-info">
-               <span class="cardapio-pedido-card-info-icon"><i class="fa-solid fa-cart-shopping"></i></span>
-              <p class="cardapio-pedido-card-info-titulo">Carrinho vazio</p>
-              <p class="cardapio-pedido-card-info-p">Adicione produtos para começar</p>
-             </div>
-            </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/cappucino.jpg" alt="" />
+            <p>Cafés</p>
           </div>
-      </section>
-    </main>
+          <p class="cardapio-produtos-card-produto">Cappuccino Clássico</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 12.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/cafe_americano.jpg" alt="" />
+            <p>Cafés</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Café Americano</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 9.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/latte_machiato.jpg" alt="" />
+            <p>Cafés</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Latte Macchiato</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 13.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/cafe_gelado.jpg" alt="" />
+            <p>Cafés</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Café Gelado</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 11.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/mocha.png" alt="" />
+            <p>Cafés</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Mocha</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 14.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/croissant_artesanal.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Croissant Artesanal</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 9.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/bolo_belga.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Bolo de Chocolate Belga</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 15.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/cheesecake.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Cheesecake Especial</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 16.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/macaron.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Macaron Francês</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 12.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/tiramisu.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Tiramisu Tradicional</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 18.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/brownie_de_chocolate.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Brownie de Chocolate</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 13.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/torta_de_limao.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Torta de Limão</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 14.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/pavlova.jpg" alt="" />
+            <p>Doces</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Pavlova</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 17.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/sanduiche.jpg" alt="" />
+            <p>Salgados</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Sanduíche Premium</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 18.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/empada_frango.jpg" alt="" />
+            <p>Salgaddos</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Empada de Frango</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 11.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/quiche_lorraine.jpg" alt="" />
+            <p>Salgados</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Quiche Lorraine</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 16.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/panini.jpg" alt="" />
+            <p>Salgados</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Panini Italiano</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 19.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/croissant_queijo.jpg" alt="" />
+            <p>Salgados</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Croissant de Queijo e Presunto</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 10.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/wrap_vegetariano.jpg" alt="" />
+            <p>Salgados</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Wrap Vegetariano</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 15.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/mocha_chocolate.jpg" alt="" />
+            <p>Bebidas Especiais</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Mocha Chocolate</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 14.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/smoothie.jpg" alt="" />
+            <p>Bebidas Especiais</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Smoothie de Frutas</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 15.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/chocolate_quente.jpg" alt="" />
+            <p>Bebidas Especiais</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Chocolate Quente Premium</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 13.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/cha.jpg" alt="" />
+            <p>Bebidas Especiais</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Chá Especial</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 10.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/frappe.jpg" alt="" />
+            <p>Bebidas Especiais</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Frappé de Caramelo</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 16.00</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+        <div class="cardapio-produtos-card">
+          <div class="cardapio-produtos-card-img">
+            <img src="../../assets/imgs/cardapio/milkshake.jpg" alt="" />
+            <p>Bebidas Especiais</p>
+          </div>
+          <p class="cardapio-produtos-card-produto">Milkshake Especial</p>
+          <div class="cardapio-produtos-card-preco">
+            <p>R$ 17.50</p>
+            <button> <i class="fa-solid fa-plus"></i> Adicionar</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="cardapio-pedido">
+        <div class="cardapio-pedido-card">
+          <div class="cardapio-pedido-card-title">
+            <span class="cardapio-pedido-card-title-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+            <h3 class="cardapio-pedido-card-title-titulo">Seu Pedido</h3>
+          </div>
+          <div class="cardapio-pedido-card-info">
+            <span class="cardapio-pedido-card-info-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+            <p class="cardapio-pedido-card-info-titulo">Carrinho vazio</p>
+            <p class="cardapio-pedido-card-info-p">Adicione produtos para começar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>

@@ -401,3 +401,49 @@ main{
   text-align: center;
   font-weight: bold;
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 430px) {
+  /* barra de navegacao e parte principal */
+
+  * {
+    overflow-x: hidden;
+  }
+
+
+  .login-card{
+    width: 85%;
+  }
+
+  .login-card-textos{
+    width: 150%;
+  }
+
+  .login-card-aviso{
+     width: 150%;
+  }
+
+  .login-card-aviso p{
+    margin-left: 0rem;
+  }
+
+  .login-card-aviso span{
+    width: 50%;
+  }
+
+  .login-card-form{
+   width: 150%;
+  }
+
+  .login-card-options{
+    width: 150%;
+  }
+
+  .login-card-credenciais{
+    width: 150%;
+  }
+
+
+
+
+}

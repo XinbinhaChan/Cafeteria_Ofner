@@ -384,18 +384,109 @@ main {
   background-color: white;
   width: 80rem;
   height: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 1rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: 0, auto;
+  overflow: hidden;
 }
 
-.espaco-imagens>img{
-  border: 1px solid red;
-  width: 95%;
-  height: 95%;
-  border-radius: 1rem;
+.espaco-imagens-slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.espaco-imagens-slides input{
+  display: none;
+}
+
+.espaco-imagens-fotos {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.espaco-imagens-fotos img {
+  width: 80rem;
+  height: 40rem;
+
+}
+
+.espaco-imagens-navegacao-manual{
+  position: absolute;
+  width: 80rem;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.espaco-imagens-navegacao-manual-btn{
+  border: 2px solid white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.espaco-imagens-navegacao-manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.espaco-imagens-navegacao-manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ #first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ #first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ #first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ #first{
+  margin-left: -75%;
+}
+
+
+.espaco-imagens-navegacao-auto div{
+  border: 2px solid red;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.espaco-imagens-navegacao-auto{
+  position: absolute;
+  width: 80rem;
+  margin-top: 37.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.espaco-imagens-navegacao-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .espaco-imagens-navegacao-auto .espaco-imagens-navegacao-auto-btn1{
+  background-color: white;
+}
+
+#radio2:checked ~ .espaco-imagens-navegacao-auto .espaco-imagens-navegacao-auto-btn2{
+  background-color: white;
+}
+
+#radio3:checked ~ .espaco-imagens-navegacao-auto .espaco-imagens-navegacao-auto-btn3{
+  background-color: white;
+}
+
+#radio4:checked ~ .espaco-imagens-navegacao-auto .espaco-imagens-navegacao-auto-btn4{
+  background-color: white;
 }
 
 
@@ -753,10 +844,88 @@ main {
   
 }
 
+.nav-mobile{
+      display: none;
+    }
+
+
 /* RESPOSIVIDADE EMBAIXO */
 
 
 /* mobile */
-@media (min-width: 320px)  and (max-width: 425px){
+@media (min-width: 320px)  and (max-width: 430px){
+    /* barra de navegacao e parte principal */
   
+    *{
+      overflow-x: hidden;
+    }
+  
+    .nav-pc{
+      display: none;
+    }
+
+    .nav-mobile{
+      display: block;
+    }
+
+    .nav-mobile .nav-mobile-links{
+      display: none;
+    }
+
+    .apresentacao-logo img{
+      width: 100px;
+      height: 100px;
+    }
+    .apresentacao-text-titulo{
+      font-size: 30px;
+      width: 70%;
+    }
+    .apresentacao-text-p{
+      font-size: 15px;
+      text-align: center;
+      padding: 0;
+      width: 70%;
+    }
+
+    /* .apresentacao-button-cardapio{
+    } */
+
+    .apresentacao-button-pedido{
+      margin-bottom: 1rem;
+    }
+
+    .apresentacao-button{
+      display: grid;
+      columns: 1; 
+      align-items: center;
+      justify-content: center; 
+    }
+
+    /* destaques */
+
+    .destaques-textos-p{
+      width: 90%;
+    }
+
+
+    /* venha nos visitar */
+
+    .localizacao-textos-titulo{
+      font-size: 40px;
+    }
+
+    .localizacao-mapa{
+      display:block;
+    }
+
+    .localizacao-gps{
+      width: 500px;
+      height: 350px;
+    }
+
+    .localizacao-informacoes{
+      margin-top: 30px;
+      width: 16rem;
+      height: 40rem;
+    }
 }

@@ -377,3 +377,44 @@ main {
   text-align: center;
   font-weight: 300;
 }
+
+.nav-mobile{
+  display: none;
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 430px) {
+  /* barra de navegacao e parte principal */
+
+  * {
+    overflow-x: hidden;
+  }
+
+  .nav-pc {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-mobile .nav-mobile-links {
+    display: none;
+  }
+
+  .cardapio-pedido{
+    display: none;
+  }
+
+  .filter{
+    display: grid;
+    width: 80%;
+  }
+
+  .cardapio-produtos{
+    width: 150%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 3rem;
+  }
+}
