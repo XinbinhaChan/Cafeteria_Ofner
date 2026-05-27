@@ -79,7 +79,6 @@
             </button>
           </div>
         </div>
-
       </nav>
     </header>
 
@@ -123,23 +122,121 @@
           </p>
         </div>
 
-        <div class="destaques-produtos">
-          <div class="slides">
-            <img
-              src="../../assets/imgs/cafe.jpg"
-              alt="Carrossel HTML CSS Imagem 1"
-            />
-            <img
-              src="../../assets/imgs/croissant.jpg"
-              alt="Carrossel HTML CSS Imagem 2"
-            />
-            <img src="assets/imgs/" alt="Carrossel HTML CSS Imagem 3" />
+        <div class="produtos">
+          <div class="destaques-slider">
+            <button
+              class="destaques-slider-seta destaques-slider-seta--esquerda"
+              id="destaquesAnterior"
+            >
+              &#8249;
+            </button>
+            <div class="destaques-slider-trilha-wrapper">
+              <div class="destaques-slider-trilha" id="destaquesTrilha">
+                <!-- Cole seus cards aqui -->
+                <div class="cardapio-produtos-card">
+                  <div class="cardapio-produtos-card-img">
+                    <img
+                      src="../../assets/imgs/cardapio/cappucino.jpg"
+                      alt=""
+                    />
+                    <p>Cafés</p>
+                  </div>
+                  <p class="cardapio-produtos-card-produto">
+                    Cappuccino Clássico
+                  </p>
+                  <div class="cardapio-produtos-card-preco">
+                    <p>R$ 12.00</p>
+                    <a href="../html/cardapio.html"><i class="fa-solid fa-plus"></i> Pedir</a>
+                  </div>
+                </div>
+                <div class="cardapio-produtos-card">
+                  <div class="cardapio-produtos-card-img">
+                    <img
+                      src="../../assets/imgs/cardapio/croissant_artesanal.jpg"
+                      alt=""
+                    />
+                    <p>Doces</p>
+                  </div>
+                  <p class="cardapio-produtos-card-produto">
+                    Croissant Artesanal
+                  </p>
+                  <div class="cardapio-produtos-card-preco">
+                    <p>R$ 9.50</p>
+                    <a href="../html/cardapio.html"><i class="fa-solid fa-plus"></i> Pedir</a>
+                  </div>
+                </div>
+                <div class="cardapio-produtos-card">
+                  <div class="cardapio-produtos-card-img">
+                    <img
+                      src="../../assets/imgs/cardapio/bolo_belga.jpg"
+                      alt=""
+                    />
+                    <p>Doces</p>
+                  </div>
+                  <p class="cardapio-produtos-card-produto">
+                    Bolo de Chocolate Belga
+                  </p>
+                  <div class="cardapio-produtos-card-preco">
+                    <p>R$ 15.00</p>
+                    <a href="../html/cardapio.html"><i class="fa-solid fa-plus"></i> Pedir</a>
+                  </div>
+                </div>
+                <div class="cardapio-produtos-card">
+                  <div class="cardapio-produtos-card-img">
+                    <img src="../../assets/imgs/cardapio/expresso.jpg" alt="" />
+                    <p>Cafés</p>
+                  </div>
+                  <p class="cardapio-produtos-card-produto">Espresso Premium</p>
+                  <div class="cardapio-produtos-card-preco">
+                    <p>R$ 8.50</p>
+                    <a href="../html/cardapio.html"><i class="fa-solid fa-plus"></i> Pedir</a>
+                  </div>
+                </div>
+                <div class="cardapio-produtos-card">
+                  <div class="cardapio-produtos-card-img">
+                    <img
+                      src="../../assets/imgs/cardapio/cheesecake.jpg"
+                      alt=""
+                    />
+                    <p>Doces</p>
+                  </div>
+                  <p class="cardapio-produtos-card-produto">
+                    Cheesecake Especial
+                  </p>
+                  <div class="cardapio-produtos-card-preco">
+                    <p>R$ 16.50</p>
+                    <a href="../html/cardapio.html"><i class="fa-solid fa-plus"></i> Pedir</a>
+                  </div>
+                </div>
+                <div class="cardapio-produtos-card">
+                  <div class="cardapio-produtos-card-img">
+                    <img
+                      src="../../assets/imgs/cardapio/sanduiche.jpg"
+                      alt=""
+                    />
+                    <p>Salgados</p>
+                  </div>
+                  <p class="cardapio-produtos-card-produto">
+                    Sanduíche Premium
+                  </p>
+                  <div class="cardapio-produtos-card-preco">
+                    <p>R$ 18.50</p>
+                    <a href="../html/cardapio.html"><i class="fa-solid fa-plus"></i> Pedir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="destaques-slider-seta destaques-slider-seta--direita"
+              id="destaquesPróximo"
+            >
+              &#8250;
+            </button>
           </div>
-          <button class="btn-prev">&#10094;</button>
-          <button class="btn-next">&#10095;</button>
+          <div class="destaques-dots" id="destaquesDots"></div>
         </div>
         <button class="destaques-cardapio">
-          <a href="#">Ver Todos os Produtos</a>
+          <a href="../html/cardapio.html">Ver Todos os Produtos</a>
         </button>
       </section>
       <section class="espaco">
@@ -151,24 +248,23 @@
         </div>
         <div class="espaco-imagens">
           <div class="espaco-imagens-slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
 
             <div class="espaco-imagens-fotos" id="first">
-              <img src="../../assets/imgs/cafeteria_img1.jpg" alt="">
+              <img src="../../assets/imgs/cafeteria_img1.jpg" alt="" />
             </div>
             <div class="espaco-imagens-fotos">
-              <img src="../../assets/imgs/cafeteria_img2.jpg" alt="">
+              <img src="../../assets/imgs/cafeteria_img2.jpg" alt="" />
             </div>
             <div class="espaco-imagens-fotos">
-              <img src="../../assets/imgs/cafeteria_img3.jpg" alt="">
+              <img src="../../assets/imgs/cafeteria_img3.jpg" alt="" />
             </div>
             <div class="espaco-imagens-fotos">
-              <img src="../../assets/imgs/cafeteria_img4.jpg" alt="">
+              <img src="../../assets/imgs/cafeteria_img4.jpg" alt="" />
             </div>
-
 
             <div class="espaco-imagens-navegacao-auto">
               <div class="espaco-imagens-navegacao-auto-btn1"></div>
@@ -179,10 +275,22 @@
           </div>
 
           <div class="espaco-imagens-navegacao-manual">
-            <label for="radio1" class="espaco-imagens-navegacao-manual-btn"></label>
-            <label for="radio2" class="espaco-imagens-navegacao-manual-btn"></label>
-            <label for="radio3" class="espaco-imagens-navegacao-manual-btn"></label>
-            <label for="radio4" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label
+              for="radio1"
+              class="espaco-imagens-navegacao-manual-btn"
+            ></label>
+            <label
+              for="radio2"
+              class="espaco-imagens-navegacao-manual-btn"
+            ></label>
+            <label
+              for="radio3"
+              class="espaco-imagens-navegacao-manual-btn"
+            ></label>
+            <label
+              for="radio4"
+              class="espaco-imagens-navegacao-manual-btn"
+            ></label>
           </div>
         </div>
       </section>
@@ -210,7 +318,6 @@
             ></iframe>
           </div>
           <div class="localizacao-informacoes">
-            
             <div class="localizacao-informacoes-endereco">
               <div class="localizacao-informacoes-endereco-icon">
                 <i class="fa-solid fa-location-dot"></i>

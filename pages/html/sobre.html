@@ -25,6 +25,8 @@
       src="https://kit.fontawesome.com/7dc64e4614.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/sobre.js" defer></script>
     <title>Ofner</title>
   </head>
   <body>
@@ -119,7 +121,7 @@
           </p>
         </div>
         <div class="historia-imagem">
-          <img src="../../assets/imgs/ofner_interior3.jpg" alt="" />
+          <img src="../../assets/imgs/cafeteria_img2.jpg" alt="" />
         </div>
       </section>
       <section class="jornada">
@@ -273,9 +275,44 @@
           
           <h3 class="espaco-text-titulo">Nosso Espaço </h3>
           <p class="espaco-text-p">Um ambiente pensado para você se sentir em casa</p>
-        </div>
-        <div class="espaco-img">
 
+          
+        </div>
+        <div class="espaco-imagens">
+          <div class="espaco-imagens-slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="espaco-imagens-fotos" id="first">
+              <img src="../../assets/imgs/cafeteria_img1.jpg" alt="">
+            </div>
+            <div class="espaco-imagens-fotos">
+              <img src="../../assets/imgs/cafeteria_img2.jpg" alt="">
+            </div>
+            <div class="espaco-imagens-fotos">
+              <img src="../../assets/imgs/cafeteria_img3.jpg" alt="">
+            </div>
+            <div class="espaco-imagens-fotos">
+              <img src="../../assets/imgs/cafeteria_img4.jpg" alt="">
+            </div>
+
+
+            <div class="espaco-imagens-navegacao-auto">
+              <div class="espaco-imagens-navegacao-auto-btn1"></div>
+              <div class="espaco-imagens-navegacao-auto-btn2"></div>
+              <div class="espaco-imagens-navegacao-auto-btn3"></div>
+              <div class="espaco-imagens-navegacao-auto-btn4"></div>
+            </div>
+          </div>
+
+          <div class="espaco-imagens-navegacao-manual">
+            <label for="radio1" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label for="radio2" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label for="radio3" class="espaco-imagens-navegacao-manual-btn"></label>
+            <label for="radio4" class="espaco-imagens-navegacao-manual-btn"></label>
+          </div>
         </div>
       </section>
       <section class="numeros">
@@ -308,7 +345,23 @@
           <h3 class="produtos-text-titulo">Nossos Produtos</h3>
           <p class="produtos-text-p">Criações artesanais que celebram a tradição</p>
         </div>
-        <div class="produtos-cards"></div>
+        <div class="produtos-imagens">
+  <div class="slider-container">
+    <button class="arrow arrow-left" id="prevBtn">&#8249;</button>
+    <div class="slider-track-wrapper">
+      <div class="slider-track" id="sliderTrack">
+        <div class="card"><img src="../../assets/imgs/cardapio/cappucino.jpg" alt=""></div>
+        <div class="card"><img src="../../assets/imgs/cardapio/croissant_artesanal.jpg" alt=""></div>
+        <div class="card"><img src="../../assets/imgs/cardapio/bolo_belga.jpg" alt=""></div>
+        <div class="card"><img src="../../assets/imgs/cardapio/cheesecake.jpg" alt=""></div>
+        <div class="card"><img src="../../assets/imgs/cardapio/quiche_lorraine.jpg" alt=""></div>
+        <div class="card"><img src="../../assets/imgs/cardapio/mocha.png" alt=""></div>
+      </div>
+    </div>
+    <button class="arrow arrow-right" id="nextBtn">&#8250;</button>
+  </div>
+  <div class="dots" id="dots"></div>
+</div>
       </section>
       <section class="convite">
         <span class="convite-icon"><i class="fa-solid fa-mug-hot"></i></span>
