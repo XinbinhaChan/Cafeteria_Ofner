@@ -169,19 +169,56 @@ main {
   font-weight: 700;
 }
 
-.apresentacao-horario {
-  background-color: #eb2c35;
-  border: #eb2c35 10px solid;
-  border-radius: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
+.status-badge {
+  display: inline-flex;
   align-items: center;
+  gap: 10px;
+  background: #EB2D36;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 50px;
+  user-select: none;
+  transition: background 0.4s ease;
 }
-.apresentacao-horario p {
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
+ 
+.status-badge.open {
+  background: #09BB4D;
 }
+ 
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+  animation: pulse-closed 1.8s infinite;
+}
+ 
+.status-badge.open .dot {
+  animation: pulse-open 1.8s infinite;
+}
+ 
+.divider {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.45);
+  margin: 0 2px;
+}
+ 
+@keyframes pulse-closed {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+ 
+@keyframes pulse-open {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.3); }
+}
+
+
 .apresentacao-button-pedido {
   cursor: pointer;
   border-radius: 10px;

@@ -109,3 +109,47 @@ function reiniciarIntervalo() {
 
 iniciarIntervalo();
 window.addEventListener("resize", atualizarSlider);
+
+
+
+
+
+
+(function () {
+  var OPEN_TIME  = '09:00';
+  var CLOSE_TIME = '19:00';
+ 
+  function timeToMins(t) {
+    var parts = t.split(':');
+    return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+  }
+ 
+  function getNowMins() {
+    var now = new Date();
+    return now.getHours() * 60 + now.getMinutes();
+  }
+ 
+  function updateBadge() {
+    var open   = timeToMins(OPEN_TIME);
+    var close  = timeToMins(CLOSE_TIME);
+    var now    = getNowMins();
+    var isOpen = now >= open && now < close;
+ 
+    var badge      = document.getElementById('status-badge');
+    var statusText = document.getElementById('status-text');
+    var hoursText  = document.getElementById('hours-text');
+ 
+    if (isOpen) {
+      badge.classList.add('open');
+      statusText.textContent = 'Aberto agora';
+    } else {
+      badge.classList.remove('open');
+      statusText.textContent = 'Fechado agora';
+    }
+ 
+    hoursText.textContent = OPEN_TIME + ' – ' + CLOSE_TIME;
+  }
+ 
+  updateBadge();
+  setInterval(updateBadge, 60000);
+})();
